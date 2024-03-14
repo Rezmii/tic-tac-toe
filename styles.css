@@ -1,0 +1,13 @@
+.gameboard-div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 60px;
+  font-size: 3em;
+  margin-top: 2em;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
