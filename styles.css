@@ -11,3 +11,17 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.position-div {
+  cursor: pointer;
+}
+
+.dupa {
+  text-decoration: line-through;
+}
+
+.divElement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
