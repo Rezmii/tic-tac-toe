@@ -61,7 +61,6 @@ function setupClickHandler() {
       }
       displayGameBoard(gameBoard);
       gameRules(gameBoard, currentStatus);
-      console.log(gameBoard);
     }
   });
 }
@@ -140,9 +139,11 @@ function gameRules(gameBoard, val) {
     displayButton();
   } else {
     let positionsCount = checkIfAllPositionsFilled(gameBoard);
-    if (positionsCount === 9) restartGameBoard(gameBoard);
+    if (positionsCount === 9) {
+      restartGameBoard(gameBoard);
+      displayGameBoard(gameBoard);
+    }
   }
-  //displayGameBoard(gameBoard);
 }
 
 function restartGameBoard(gameBoard) {
@@ -163,7 +164,7 @@ function getWinningPositions(a, b, c) {
       `.position-div-${winningPosition}`
     );
 
-    positionDiv.classList.add("dupa");
+    positionDiv.classList.add("won");
   });
 }
 
